@@ -6,7 +6,7 @@ import clipboard
 
 # Create a sidebar with options
 option = st.sidebar.radio("Select an Option", ["Quote Generator","Dad Jokes", "Facts"])
-api_key = 'CByiyC/dvwHHxZO0YhBxQA==zBktfyMh9t1adxJm'  # Replace with your actual API key
+api_key = st.secrets["api_key"]  # Replace with your actual API key
 
 # Function to fetch a random quote
 def fetch_random_quote(category):
