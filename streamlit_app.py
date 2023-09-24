@@ -1,45 +1,11 @@
-# import streamlit as st
-# import requests
-
-# # Define the Streamlit app
-# st.title("Random Quote Generator")
-
-# # Create a dropdown menu to select the category
-# category = st.selectbox("Select a Category", ["happiness","family","failure","experience", "friendship","knowledge","Leadership","men","movies","success", "love", "life"])
-# # You can add more categories to the list as needed
-
-# # Make an API request to fetch a random quote in the selected category
-# api_url = f'https://api.api-ninjas.com/v1/quotes?category={category}'
-# api_key = 'CByiyC/dvwHHxZO0YhBxQA==zBktfyMh9t1adxJm'  # Replace with your actual API key
-
-# headers = {'X-Api-Key': api_key}
-# response = requests.get(api_url, headers=headers)
-
-# # Add a button to generate a random quote
-# if st.button("Generate Random Quote"):
-#     if response.status_code == requests.codes.ok:
-#         data = response.json()
-#         # st.write(data)
-#         try :
-#             quote = data[0]["quote"]
-#             author = data[0]["author"]
-#             st.write(quote)
-#             st.write(f'Author : {author}')
-#         except : 
-#             st.write('Servers are busy come back later')
-#     else:
-#         st.write(f"Error: {response.status_code} - {response.text}")
 import streamlit as st
 import requests
 import random
 import string
 import clipboard
 
-# Define the Streamlit app
-# st.title("Random Generator App")
-
 # Create a sidebar with options
-option = st.sidebar.radio("Select an Option", ["Quote Generator","Dad Jokes", "Facts","Password Generator"])
+option = st.sidebar.radio("Select an Option", ["Quote Generator","Dad Jokes", "Facts"])
 api_key = 'CByiyC/dvwHHxZO0YhBxQA==zBktfyMh9t1adxJm'  # Replace with your actual API key
 
 # Function to fetch a random quote
