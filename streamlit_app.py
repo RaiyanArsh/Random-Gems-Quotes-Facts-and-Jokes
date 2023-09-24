@@ -4,6 +4,8 @@ import random
 import string
 import clipboard
 
+favicon = "lightbulb.png"  # Replace with the actual path to your favicon image
+st.set_page_config(page_title="Quotes & Facts", page_icon=favicon)
 # Create a sidebar with options
 option = st.sidebar.radio("Select an Option", ["Quote Generator","Dad Jokes", "Facts"])
 api_key = st.secrets["api_key"]  # Replace with your actual API key
