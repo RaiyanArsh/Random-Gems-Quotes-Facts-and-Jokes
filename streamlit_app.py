@@ -89,7 +89,7 @@ elif option == "Password Generator":
     st.write(f'Generated Password: {generated_password}')
     if st.button("Copy Password"):
         clipboard.copy(generated_password)  # Copy the password to the clipboard
-        st.success("Password Copied to Clipboard")
+        st.success("Password Copied Failed")
 
 elif option == "Dad Jokes" :
     st.title("Dad Jokes")
