@@ -82,14 +82,14 @@ if option == "Quote Generator":
         fetch_random_quote(category)
         # st.write(f'"{quote}" - {author}')4
 
-elif option == "Password Generator":
-    st.title("Password Generator")
-    password_length = st.slider("Select Password Length", 4, 32, 12)
-    generated_password = generate_random_password(password_length)
-    st.write(f'Generated Password: {generated_password}')
-    if st.button("Copy Password"):
-        clipboard.copy(generated_password)  # Copy the password to the clipboard
-        st.success("Password Copied Failed")
+# elif option == "Password Generator":
+#     st.title("Password Generator")
+#     password_length = st.slider("Select Password Length", 4, 32, 12)
+#     generated_password = generate_random_password(password_length)
+#     st.write(f'Generated Password: {generated_password}')
+#     if st.button("Copy Password"):
+#         clipboard.copy(generated_password)  # Copy the password to the clipboard
+#         st.write("Password Copied Failed")
 
 elif option == "Dad Jokes" :
     st.title("Dad Jokes")
